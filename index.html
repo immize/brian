@@ -124,7 +124,7 @@
         <div class="result-num">21%</div>
         <div class="result-text">
           <strong>Employee growth tied directly to storytelling</strong>
-          Parkhill's CEO trusted Brian to build a full campaign from a single idea — one values video became a series of stories paired with social recruitment cutdowns. The results coincided with 21% employee growth in 2025.
+          Parkhill's CEO trusted me to build a full campaign from a single idea — one values video became a series of stories paired with social recruitment cutdowns. The results coincided with 21% employee growth in 2025.
         </div>
       </div>
 
@@ -297,25 +297,25 @@
       <a href="mailto:brianmatthewmedia@gmail.com" class="contact-email">brianmatthewmedia@gmail.com</a>
     </div>
 
-    <div class="contact-form reveal">
+    <form class="contact-form reveal" id="contactForm" novalidate>
       <div class="form-row">
         <div class="form-field">
-          <label>Your Name</label>
-          <input type="text" placeholder="Jane Smith" />
+          <label for="f-name">Your Name</label>
+          <input id="f-name" name="name" type="text" placeholder="Jane Smith" required />
         </div>
         <div class="form-field">
-          <label>Organization</label>
-          <input type="text" placeholder="Nonprofit, brand, agency..." />
+          <label for="f-org">Organization</label>
+          <input id="f-org" name="organization" type="text" placeholder="Nonprofit, brand, agency..." />
         </div>
       </div>
       <div class="form-field">
-        <label>Email Address</label>
-        <input type="email" placeholder="jane@yourorg.com" />
+        <label for="f-email">Email Address</label>
+        <input id="f-email" name="email" type="email" placeholder="jane@yourorg.com" required />
       </div>
       <div class="form-row">
         <div class="form-field">
-          <label>Project Type</label>
-          <select>
+          <label for="f-type">Project Type</label>
+          <select id="f-type" name="project_type">
             <option value="" disabled selected>What are you making?</option>
             <option>Documentary / Story Film</option>
             <option>Brand / Commercial</option>
@@ -326,8 +326,8 @@
           </select>
         </div>
         <div class="form-field">
-          <label>Budget Range</label>
-          <select>
+          <label for="f-budget">Budget Range</label>
+          <select id="f-budget" name="budget">
             <option value="" disabled selected>Approximate budget</option>
             <option>Under $5,000</option>
             <option>$5,000 – $15,000</option>
@@ -338,11 +338,12 @@
         </div>
       </div>
       <div class="form-field">
-        <label>Tell Me About Your Project</label>
-        <textarea placeholder="What's the story? Who needs to hear it, and why now?"></textarea>
+        <label for="f-message">Tell Me About Your Project</label>
+        <textarea id="f-message" name="message" placeholder="What's the story? Who needs to hear it, and why now?"></textarea>
       </div>
-      <button class="btn-primary" type="button">Send It</button>
-    </div>
+      <div id="formStatus" class="form-status" aria-live="polite"></div>
+      <button class="btn-primary" type="submit" id="formSubmit">Send It</button>
+    </form>
   </section>
 
   <!-- FOOTER -->
@@ -350,9 +351,8 @@
     <div class="footer-logo"><span>B</span>RIAN WILLIAMS FILMS</div>
     <p class="footer-copy">© 2025 Brian Williams · brianmatthewmedia@gmail.com</p>
     <ul class="footer-links">
-      <li><a href="https://vimeo.com" target="_blank" rel="noopener">Vimeo</a></li>
-      <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/_brian.williams" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/brian-williams-/" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
   </footer>
 

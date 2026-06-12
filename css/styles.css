@@ -637,6 +637,14 @@ nav {
 .form-field textarea { resize: vertical; min-height: 120px; }
 .form-field select option { background: var(--surface); }
 
+.form-status {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  min-height: 1.2em;
+}
+.form-status--ok  { color: #6dbf7e; }
+.form-status--err { color: #e07070; }
+
 /* ── FOOTER ── */
 footer {
   padding: 2.5rem 3rem;
